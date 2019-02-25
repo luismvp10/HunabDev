@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: NexaBold;
+    src: url("/assets/fonts/Nexa Bold.otf") format("truetype");
+}
+
+@font-face {
+    font-family: NexaLight;
+    src: url("/assets/fonts/Nexa Light.otf") format("truetype");
+}
