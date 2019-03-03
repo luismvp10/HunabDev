@@ -10,6 +10,7 @@ import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { ContactanosComponent } from './components/contactanos/contactanos.component';
 import { UneteComponent } from './components/unete/unete.component';
 import { PrivacidadComponent } from './components/privacidad/privacidad.component';
+import { WelcomeComponent } from './components/welcome/welcome.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,8 @@ import { PrivacidadComponent } from './components/privacidad/privacidad.componen
     NosotrosComponent,
     ContactanosComponent,
     UneteComponent,
-    PrivacidadComponent
+    PrivacidadComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,

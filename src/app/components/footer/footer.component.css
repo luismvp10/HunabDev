@@ -5,9 +5,17 @@ p{
 .container{
   margin: 0;
 }
+hr {
+  margin-top: -3%;
+  height: 1px;
+  width: 15%;
+  background-color:#3c92ca;
+  margin-left: 42%;
+}
+
 
 .footer{
-  background-color:#bac2cc;
+  background-color:#eaedf1;
   margin:0;
   margin-right: 0;
 }
