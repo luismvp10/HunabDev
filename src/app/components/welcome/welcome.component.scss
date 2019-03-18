@@ -1,3 +1,7 @@
+* {
+    font-weight: bold;
+}
+
 .backImage {
     // background: url(https://seguridadparaelpc.files.wordpress.com/2018/08/quc3a9-es-la-informc3a1tica-forense.jpg?w=1366&h=768&crop=1) no-repeat fixed center;
     -webkit-background-size: cover;
@@ -11,19 +15,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-color: black;
-    max-width: 1348px;
     margin-left: 0px;
     margin-right: 0px;
 }
-
-
-/*
-body {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    background-color: #34495e;
-}*/
 
 .content {
     position: absolute;
@@ -32,12 +26,13 @@ body {
     transform: translate(-50%, -50%);
     height: 160px;
     overflow: hidden;
-    font-family: 'Lato', sans-serif;
-    font-size: 35px;
+    font-family: NexaLight;
+    font-weight: bold;
+    font-size: 33px;
     line-height: 40px;
     color: #ecf0f1;
     &__container {
-        font-weight: 600;
+        font-weight: bold;
         overflow: hidden;
         height: 40px;
         padding: 0 40px;
@@ -255,3 +250,82 @@ body {
 // y = 4 -> Animation between two lines
 // x = 12.66 -> Time spent on a line
 // You can define a value and calculate the other if you want change speed or the number of lines
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    .backImage {
+        height: 330px;
+    }
+    .content {
+        top: 38%;
+    }
+    .content {
+        font-family: NexaLight;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .content__container__list {
+        padding-left: 150px;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    .backImage {
+        height: 330px;
+    }
+    .content {
+        top: 35%;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .backImage {
+        height: 430px;
+    }
+    .content {
+        top: 30%;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    .backImage {
+        height: 530px;
+    }
+    .content {
+        top: 65%;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .content {
+        top: 57%;
+    }
+    .backImage {
+        height: 650px;
+    }
+}
+
+@media only screen and (min-width: 1810px) {
+    .content {
+        top: 50%;
+    }
+}
+
+@media only screen and (min-width: 2200px) {
+    .content {
+        top: 45%;
+    }
+}

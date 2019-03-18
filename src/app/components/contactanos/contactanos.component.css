@@ -1,11 +1,141 @@
-*{
-  font-family: NexaLight;
-  font-weight: bold;
+* {
+    font-family: NexaLight;
+    font-weight: bold;
 }
+
+.contactanos {
+    margin-bottom: 6%;
+}
+
 hr {
-  margin-top: -1%;
-  height: 4px;
-  width: 25%;
-  background-color:#3c92ca;
-  margin-left: 0%;
+    margin-top: -1%;
+    height: 4px;
+    width: 25%;
+    background-color: #3c92ca;
+    margin-left: 36%;
+}
+
+h1 {
+    margin-left: 38%;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (min-width: 320px) {
+    hr {
+        margin-left: 28%;
+        width: 50%;
+    }
+    h1 {
+        margin-left: 11%;
+    }
+    .imgMessage {
+        display: none;
+    }
+    form {
+        width: 290px;
+    }
+}
+
+@media only screen and (min-width: 360px) {
+    hr {
+        margin-left: 28%;
+        width: 50%;
+    }
+    h1 {
+        margin-left: 15%;
+    }
+    .imgMessage {
+        display: none;
+    }
+    form {
+        width: 320px;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    hr {
+        margin-left: 30%;
+        width: 50%;
+    }
+    h1 {
+        margin-left: 20%;
+    }
+    .imgMessage {
+        display: none;
+    }
+    form {
+        width: 350px;
+    }
+}
+
+@media only screen and (min-width: 411px) {
+    hr {
+        margin-left: 27%;
+        width: 50%;
+    }
+    h1 {
+        margin-left: 20%;
+    }
+    .imgMessage {
+        display: none;
+    }
+    form {
+        width: 380px;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 414px) {
+    hr {
+        margin-left: 26%;
+        width: 50%;
+    }
+    h1 {
+        margin-left: 20%;
+    }
+    .imgMessage {
+        display: none;
+    }
+    form {
+        width: 380px;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    hr {
+        margin-left: 52%;
+        width: 20%;
+    }
+    h1 {
+        margin-left: 52%;
+    }
+    .imgMessage {
+        display: block;
+        width: 200px;
+    }
+    form {
+        width: 320px;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1024px) {
+    hr {
+        margin-left: 52%;
+    }
+}
+
+@media only screen and (min-width: 1310px) {
+    form {
+        width: 550px;
+    }
 }
