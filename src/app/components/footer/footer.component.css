@@ -1,140 +1,297 @@
-p {
-    font-family: NexaLight;
-    font-weight: bold;
-}
-
-.container {
-    margin: 0;
-}
-
-hr {
-    margin-top: -3%;
-    height: 1px;
-    width: 15%;
-    background-color: #3c92ca;
-    margin-left: 42%;
-}
-
-.footer {
-    background-color: #eaedf1;
-    margin: 0;
-    margin-right: 0;
-}
-
-.title {
-    margin-top: 15%;
-    margin-bottom: 8%;
-}
-
-.redes {
-    margin-right: 3%;
-    margin-left: 3%;
-    width: 35px;
-}
-
-@media only screen and (max-width: 320px) {
-    p {
-        font-size: 0.4rem;
-    }
-    .redes {
-        width: 18px;
-        max-width: 18px;
-    }
-    hr {
-        margin-top: -20%;
-        width: 20%;
-    }
-    .dir-arg {
-        margin-top: -45%;
-    }
-    .dir-mex {
-        margin-top: -30%;
-    }
-    .rights {
-        margin-top: -20%;
-    }
-}
-
-
-/* Extra small devices (phones, 600px and down) */
-
-@media only screen and (max-width: 414px) {
-    p {
-        font-size: 0.4rem;
-    }
-    .redes {
-        width: 18px;
-        max-width: 18px;
-    }
-    hr {
-        margin-top: -13%;
-        width: 20%;
-    }
-    .dir-arg {
-        margin-top: -40%;
-    }
-    .dir-mex {
-        margin-top: -30%;
-    }
-    .rights {
-        margin-top: -17%;
-    }
-}
-
-
-/* Extra small devices (phones, 600px and down) */
-
-@media only screen and (max-width: 375px) {
-    p {
-        font-size: 0.4rem;
-    }
-    .redes {
-        width: 18px;
-        max-width: 18px;
-    }
-    hr {
-        margin-top: -16%;
-        width: 20%;
-    }
-    .dir-arg {
-        margin-top: -45%;
-    }
-    .dir-mex {
-        margin-top: -30%;
-    }
-    .rights {
-        margin-top: -20%;
-    }
-}
-
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-
-@media only screen and (min-width: 600px) {
-    .container {
-        max-width: 100%;
-    }
-}
-
-
-/* Medium devices (landscape tablets, 768px and up) */
-
-@media only screen and (min-width: 768px) {
-    p {
-        font-size: 0.7rem;
-    }
-}
-
-
-/* Large devices (laptops/desktops, 992px and up) */
-
-@media only screen and (min-width: 992px) {
-    p {
-        font-size: 0.85rem;
-    }
-}
-
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-
-@media only screen and (min-width: 1200px) {}
+                    p {
+                        font-family: NexaLight;
+                        font-weight: bold;
+                        font-size: 1rem;
+                    }
+                    
+                    .container {
+                        margin: 0;
+                    }
+                    
+                    hr {
+                        margin-top: -3%;
+                        height: 1px;
+                        width: 15%;
+                        background-color: #3c92ca;
+                        margin-left: 42%;
+                    }
+                    
+                    .footer {
+                        background-color: #eaedf1;
+                        margin: 0;
+                        margin-right: 0;
+                    }
+                    
+                    .title {
+                        margin-top: 15%;
+                        margin-bottom: 8%;
+                    }
+                    
+                    .redes {
+                        margin-right: 3%;
+                        margin-left: 3%;
+                        width: 35px;
+                    }
+                    /*Media Queries*/
+                    
+                    @media only screen and (max-width: 479px) and (min-width: 320px) {
+                        p {
+                            font-size: 0.4rem;
+                        }
+                        .title {
+                            font-size: 0.6rem;
+                        }
+                        .redes {
+                            margin-top: -10%;
+                            width: 16px;
+                            max-width: 18px;
+                        }
+                        hr {
+                            margin-top: -9%;
+                            width: 20%;
+                        }
+                        .dir-arg {
+                            margin-top: 46%;
+                        }
+                        .dir-mex {
+                            margin-top: -30%;
+                        }
+                        .rights {
+                            margin-top: 2%;
+                        }
+                    }
+                    
+                    @media only screen and (max-width: 567px) and (min-width: 480px) {
+                        p {
+                            font-size: 0.4rem;
+                        }
+                        .title {
+                            font-size: 0.6rem;
+                        }
+                        .redes {
+                            margin-top: -10%;
+                            width: 16px;
+                            max-width: 18px;
+                        }
+                        hr {
+                            margin-top: -9%;
+                            width: 20%;
+                        }
+                        .dir-arg {
+                            margin-top: 25%;
+                        }
+                        .dir-mex {
+                            margin-top: -22%;
+                        }
+                        .rights {
+                            margin-top: 2%;
+                        }
+                    }
+                    
+                    @media only screen and (max-width: 599px) and (min-width: 568px) {
+                        .title {
+                            font-size: 0.6rem;
+                        }
+                        p {
+                            font-size: 0.5rem;
+                        }
+                        .redes {
+                            margin-top: -6%;
+                            width: 16px;
+                            max-width: 18px;
+                        }
+                        hr {
+                            margin-top: -9%;
+                            width: 20%;
+                        }
+                        .dir-arg {
+                            margin-top: 25%;
+                        }
+                        .rights {
+                            margin-top: 2%;
+                        }
+                        .dir-mex {
+                            margin-top: -15%;
+                        }
+                    }
+                    
+                    @media only screen and (max-width: 767px) and (min-width: 600px) {
+                        .container {
+                            max-width: 100%;
+                        }
+                        hr {
+                            margin-top: -8%;
+                            width: 35%;
+                            height: 3px;
+                            margin-left: 35%;
+                        }
+                        .title {
+                            font-size: 1.2rem;
+                        }
+                        p {
+                            font-size: 0.80rem;
+                        }
+                        .redes {
+                            width: 28px;
+                            max-width: 28px;
+                        }
+                        .dir-arg {
+                            margin-top: 44%;
+                        }
+                        .rights {
+                            margin-top: 2%;
+                        }
+                    }
+                    
+                    @media only screen and (max-width: 799px) and (min-width: 768px) {
+                        .container {
+                            max-width: 100%;
+                        }
+                        .title {
+                            font-size: 1rem;
+                        }
+                        hr {
+                            margin-top: -8%;
+                            width: 35%;
+                            height: 2px;
+                            margin-left: 33%;
+                        }
+                        p {
+                            font-size: 0.7rem;
+                        }
+                        .dir-arg {
+                            margin-top: 21%;
+                        }
+                        .rights {
+                            margin-top: 2%;
+                        }
+                    }
+                    
+                    @media only screen and (max-width: 991px) and (min-width: 800px) {
+                        .container {
+                            max-width: 100%;
+                        }
+                        .title {
+                            font-size: 1rem;
+                        }
+                        hr {
+                            margin-top: -8%;
+                            width: 35%;
+                            height: 2px;
+                            margin-left: 33%;
+                        }
+                        p {
+                            font-size: 0.7rem;
+                        }
+                        .dir-arg {
+                            margin-top: 21%;
+                        }
+                        .rights {
+                            margin-top: 2%;
+                        }
+                    }
+                    
+                    @media only screen and (min-width: 992px) {
+                        .container {
+                            max-width: 100%;
+                        }
+                        p {
+                            font-size: 0.85rem;
+                        }
+                        .title {
+                            font-size: 1.4rem;
+                        }
+                        hr {
+                            margin-top: -8%;
+                            margin-left: 29%;
+                            width: 43%;
+                        }
+                        .redes {
+                            width: 32px;
+                            max-width: 32px;
+                        }
+                        .dir-arg {
+                            margin-top: 21%;
+                        }
+                    }
+                    
+                    @media only screen and (min-width: 1200px) {
+                        p {
+                            font-size: 1.02rem;
+                        }
+                        .title {
+                            font-size: 1.6rem;
+                        }
+                        hr {
+                            margin-top: -8%;
+                            height: 3px;
+                            width: 18%;
+                            background-color: #3c92ca;
+                            margin-left: 42%;
+                        }
+                        .redes {
+                            width: 35px;
+                            max-width: 35px;
+                        }
+                        .dir-arg {
+                            margin-top: 17%;
+                        }
+                        .rights {
+                            margin-top: 4%;
+                        }
+                    }
+                    
+                    @media only screen and (min-width: 1366px) {
+                        .dir-arg {
+                            margin-top: 16%;
+                        }
+                    }
+                    
+                    @media only screen and (min-width: 1440px) {
+                        .dir-arg {
+                            margin-top: 15%;
+                        }
+                    }
+                    
+                    @media only screen and (min-width: 1540px) {
+                        .dir-arg {
+                            margin-top: 13%;
+                        }
+                    }
+                    
+                    @media only screen and (min-width: 1680px) {
+                        .dir-arg {
+                            margin-top: 13%;
+                        }
+                        p {
+                            font-size: 1.07rem;
+                        }
+                    }
+                    
+                    @media only screen and (min-width: 1920px) {
+                        .title {
+                            font-size: 1.8rem;
+                        }
+                        p {
+                            font-size: 1.1rem;
+                        }
+                        .redes {
+                            width: 52px;
+                            max-width: 52px;
+                        }
+                        .dir-arg {
+                            margin-top: 9%;
+                        }
+                    }
+                    
+                    @media only screen and (min-width: 2520px) {
+                        p {
+                            font-size: 1.27rem;
+                        }
+                        .title {
+                            font-size: 1.9rem;
+                        }
+                        .dir-arg {
+                            margin-top: 8%;
+                        }
+                    }
