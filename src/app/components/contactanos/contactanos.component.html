@@ -7,21 +7,22 @@
             <img src="./assets/imgs/contactanos/email.png" width="250" class="img-fluid" alt="Responsive image" alt="">
         </div>
         <div class="col-6 col-sm-6  ">
-            <form>
+            <form (ngSubmit)="contactForm(form.value)" #form="ngForm">
                 <div class="form-group">
-                    <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" name="nombre" ngModel>
                 </div>
                 <div class="form-group">
-                    <input type="email" class="form-control" id="email" placeholder="E-mail">
+                    <input type="email" class="form-control" id="email" placeholder="E-mail" name="email" ngModel>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="empresa" placeholder="Empresa">
+                    <input type="text" class="form-control" id="empresa" placeholder="Empresa" name="empresa" ngModel>
                 </div>
 
                 <div class="form-group">
-                    <textarea class="form-control" id="mensaje" rows="7" placeholder="Mensaje"></textarea>
+                    <textarea class="form-control" id="mensaje" rows="7" placeholder="Mensaje" name="mensaje" ngModel></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary mb-2">Solicitar Información</button>
             </form>
         </div>
+
     </div>

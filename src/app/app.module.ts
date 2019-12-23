@@ -1,6 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
+
 import { AppComponent } from './app.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -11,6 +15,10 @@ import { ContactanosComponent } from './components/contactanos/contactanos.compo
 import { UneteComponent } from './components/unete/unete.component';
 import { PrivacidadComponent } from './components/privacidad/privacidad.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
+
+//Services
+import { MessageService } from './services/message.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,9 +33,19 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
   ],
   imports: [
     BrowserModule,
-    AngularFontAwesomeModule
+    HttpClientModule,
+    FormsModule,
+    AngularFontAwesomeModule,
+    SweetAlert2Module.forRoot({
+      buttonsStyling: false,
+      customClass: 'modal-content',
+      confirmButtonClass: 'btn btn-primary',
+      cancelButtonClass: 'btn'
+      }),
   ],
-  providers: [],
+  providers: [
+    MessageService,
+    ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
