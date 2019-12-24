@@ -390,41 +390,67 @@ body {
 }
 
 
-/* Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones, 600px and down)
 
 @media only screen and (max-width: 600px) {
-    /* .sea .circle-wrapper {
+     .sea .circle-wrapper {
         width: 200px;
         height: 200px;
 
     }
     .submarino{
       display: none;
-    }*/
-}
+    }
+}*/
 
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-
-@media only screen and (min-width: 600px) {}
-
-
-/* Medium devices (landscape tablets, 768px and up) */
-
-@media only screen and (min-width: 768px) {}
-
-
-/* Large devices (laptops/desktops, 992px and up) */
-
-@media only screen and (min-width: 992px) {}
-
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-
+/* Extra large devices (large laptops and desktops, 1200px and up)
 @media only screen and (min-width: 1200px) {
     .sea .circle-wrapper {
         width: 300px;
         height: 300px;
         display: block;
     }
+}*/
+
+@media only screen and (max-width: 479px) and (min-width: 320px) {}
+
+@media only screen and (max-width: 567px) and (min-width: 480px) {}
+
+@media only screen and (max-width: 599px) and (min-width: 568px) {}
+
+@media only screen and (max-width: 767px) and (min-width: 600px) {}
+
+@media only screen and (max-width: 799px) and (min-width: 768px) {
+    .col-md-4 {
+        max-width: 100%;
+        margin-left: 25%;
+    }
+    .col-md-8 {
+        max-width: 100%;
+        margin-left: 22%;
+    }
 }
+
+@media only screen and (max-width: 991px) and (min-width: 800px) {}
+
+@media only screen and (max-width: 1199px) and (min-width: 1024px) {
+    .sea .circle-wrapper {
+        width: 260px;
+        height: 260px;
+    }
+}
+
+@media only screen and (max-width: 1365px) and (min-width: 1200px) {}
+
+@media only screen and (max-width: 1439px) and (min-width: 1366px) {}
+
+@media only screen and (max-width: 1539px) and (min-width: 1440px) {}
+
+@media only screen and (min-width: 1540px) {}
+
+@media only screen and (min-width: 1680px) {}
+
+@media only screen and (max-width: 2199px) and (min-width: 1920px) {}
+
+@media only screen and (min-width: 2200px) {}

@@ -19,7 +19,7 @@ export class ContactanosComponent implements OnInit {
     .subscribe(() => {
       Swal.fire({
         type: 'success',
-        title: 'El mensaje ha sido enviado exitosamente',
+        title: 'El mensaje ha sido enviado con éxito',
         showConfirmButton: true,
       });
     });

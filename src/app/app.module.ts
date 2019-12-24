@@ -18,6 +18,7 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
 
 //Services
 import { MessageService } from './services/message.service';
+import { LoadingComponent } from './components/shared/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { MessageService } from './services/message.service';
     ContactanosComponent,
     UneteComponent,
     PrivacidadComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,

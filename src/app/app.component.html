@@ -1,19 +1,11 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<app-navbar></app-navbar>
-<app-welcome></app-welcome>
-
-<br><br>
-<app-nosotros></app-nosotros>
-
-<app-servicios></app-servicios>
-<app-contactanos></app-contactanos>
-
-<div style="text-align:center">
-    <!--  <h1>
-    Welcome to {{ name }}!
-  </h1>-->
-    <!--<img width="550" alt="Angular Logo" src="./assets/imgs/hunabBlack.png">-->
+<app-loading *ngIf="loading"></app-loading>
+<div *ngIf="!loading">
+    <app-navbar></app-navbar>
+    <app-welcome></app-welcome>
+    <br><br>
+    <app-nosotros></app-nosotros>
+    <app-servicios></app-servicios>
+    <app-contactanos></app-contactanos>
+    <app-footer></app-footer>
 </div>
-
-
-<app-footer></app-footer>

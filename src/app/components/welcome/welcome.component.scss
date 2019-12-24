@@ -250,82 +250,109 @@
 // y = 4 -> Animation between two lines
 // x = 12.66 -> Time spent on a line
 // You can define a value and calculate the other if you want change speed or the number of lines
-
-/* Extra small devices (phones, 600px and down) */
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 479px) and (min-width: 320px) {
     .backImage {
-        height: 330px;
+        height: 560px;
     }
     .content {
-        top: 38%;
+        top: 52%;
+        font-size: 22px;
     }
-    .content {
-        font-family: NexaLight;
-        font-weight: bold;
-        font-size: 20px;
-    }
-    .content__container__list {
-        padding-left: 150px;
+    .content__container__list[_ngcontent-c3] {
+        padding-left: 159px;
     }
 }
 
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-
-@media only screen and (min-width: 600px) {
-    .backImage {
-        height: 330px;
+@media only screen and (max-width: 567px) and (min-width: 480px) {
+    .content {
+        top: 52%;
+        font-size: 29px;
     }
+    .content__container__list[_ngcontent-c3] {
+        padding-left: 218px;
+    }
+}
+
+@media only screen and (max-width: 599px) and (min-width: 568px) {
+    .content {
+        top: 52%;
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 600px) {
+    .content {
+        top: 52%;
+    }
+}
+
+@media only screen and (max-width: 799px) and (min-width: 768px) {
+    .content {
+        top: 45%;
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 800px) {
+    .content {
+        top: 46%;
+    }
+    .backImage {
+        height: 591px;
+    }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 1024px) {
+    .content {
+        top: 40%;
+    }
+    .backImage {
+        height: 540px;
+    }
+}
+
+@media only screen and (max-width: 1365px) and (min-width: 1200px) {
+    .backImage {
+        height: 650px;
+    }
+    .content {
+        top: 37%;
+    }
+}
+
+@media only screen and (max-width: 1439px) and (min-width: 1366px) {
+    .content {
+        top: 45%;
+    }
+}
+
+@media only screen and (max-width: 1539px) and (min-width: 1440px) {
+    .content {
+        top: 38%;
+    }
+}
+
+@media only screen and (min-width: 1540px) {
     .content {
         top: 35%;
     }
 }
 
-
-/* Medium devices (landscape tablets, 768px and up) */
-
-@media only screen and (min-width: 768px) {
-    .backImage {
-        height: 430px;
-    }
+@media only screen and (min-width: 1680px) {
     .content {
-        top: 30%;
+        top: 35%;
     }
 }
 
-
-/* Large devices (laptops/desktops, 992px and up) */
-
-@media only screen and (min-width: 992px) {
-    .backImage {
-        height: 530px;
-    }
+@media only screen and (max-width: 2199px) and (min-width: 1920px) {
     .content {
-        top: 65%;
-    }
-}
-
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-
-@media only screen and (min-width: 1200px) {
-    .content {
-        top: 57%;
-    }
-    .backImage {
-        height: 650px;
-    }
-}
-
-@media only screen and (min-width: 1810px) {
-    .content {
-        top: 50%;
+        top: 28%;
     }
 }
 
 @media only screen and (min-width: 2200px) {
     .content {
-        top: 45%;
+        top: 25%;
+    }
+    .backImage {
+        height: 850px;
     }
 }
