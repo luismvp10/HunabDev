@@ -3,11 +3,11 @@
                         font-weight: bold;
                         font-size: 1rem;
                     }
-                    
+
                     .container {
                         margin: 0;
                     }
-                    
+
                     hr {
                         margin-top: -3%;
                         height: 1px;
@@ -15,25 +15,25 @@
                         background-color: #3c92ca;
                         margin-left: 42%;
                     }
-                    
+
                     .footer {
                         background-color: #eaedf1;
                         margin: 0;
                         margin-right: 0;
                     }
-                    
+
                     .title {
                         margin-top: 15%;
                         margin-bottom: 8%;
                     }
-                    
+
                     .redes {
                         margin-right: 3%;
                         margin-left: 3%;
                         width: 35px;
                     }
                     /*Media Queries*/
-                    
+
                     @media only screen and (max-width: 479px) and (min-width: 320px) {
                         p {
                             font-size: 0.4rem;
@@ -60,7 +60,7 @@
                             margin-top: 2%;
                         }
                     }
-                    
+
                     @media only screen and (max-width: 567px) and (min-width: 480px) {
                         p {
                             font-size: 0.4rem;
@@ -87,7 +87,7 @@
                             margin-top: 2%;
                         }
                     }
-                    
+
                     @media only screen and (max-width: 599px) and (min-width: 568px) {
                         .title {
                             font-size: 0.6rem;
@@ -114,7 +114,7 @@
                             margin-top: -15%;
                         }
                     }
-                    
+
                     @media only screen and (max-width: 767px) and (min-width: 600px) {
                         .container {
                             max-width: 100%;
@@ -142,7 +142,7 @@
                             margin-top: 2%;
                         }
                     }
-                    
+
                     @media only screen and (max-width: 799px) and (min-width: 768px) {
                         .container {
                             max-width: 100%;
@@ -166,7 +166,7 @@
                             margin-top: 2%;
                         }
                     }
-                    
+
                     @media only screen and (max-width: 991px) and (min-width: 800px) {
                         .container {
                             max-width: 100%;
@@ -190,7 +190,7 @@
                             margin-top: 2%;
                         }
                     }
-                    
+
                     @media only screen and (min-width: 992px) {
                         .container {
                             max-width: 100%;
@@ -214,7 +214,7 @@
                             margin-top: 21%;
                         }
                     }
-                    
+
                     @media only screen and (min-width: 1200px) {
                         p {
                             font-size: 1.02rem;
@@ -240,25 +240,25 @@
                             margin-top: 4%;
                         }
                     }
-                    
+
                     @media only screen and (min-width: 1366px) {
                         .dir-arg {
                             margin-top: 16%;
                         }
                     }
-                    
+
                     @media only screen and (min-width: 1440px) {
                         .dir-arg {
                             margin-top: 15%;
                         }
                     }
-                    
+
                     @media only screen and (min-width: 1540px) {
                         .dir-arg {
                             margin-top: 13%;
                         }
                     }
-                    
+
                     @media only screen and (min-width: 1680px) {
                         .dir-arg {
                             margin-top: 13%;
@@ -267,7 +267,7 @@
                             font-size: 1.07rem;
                         }
                     }
-                    
+
                     @media only screen and (min-width: 1920px) {
                         .title {
                             font-size: 1.8rem;
@@ -276,14 +276,14 @@
                             font-size: 1.1rem;
                         }
                         .redes {
-                            width: 52px;
-                            max-width: 52px;
+                            width: 40px;
+                            max-width: 40px;
                         }
                         .dir-arg {
                             margin-top: 9%;
                         }
                     }
-                    
+
                     @media only screen and (min-width: 2520px) {
                         p {
                             font-size: 1.27rem;

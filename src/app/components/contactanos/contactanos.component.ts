@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MessageService } from '../../services/message.service';
+import { NgForm } from '@angular/forms';
 import Swal from 'sweetalert2';
 
 @Component({
@@ -9,13 +10,21 @@ import Swal from 'sweetalert2';
 })
 export class ContactanosComponent implements OnInit {
 
+/*
+  Usuario:Object ={
+    nombre: "Luis",
+    correo: "luis@gmail.com"
+  }*/
   constructor( private messageService: MessageService) { }
 
   ngOnInit() {
   }
 
-  contactForm(form) {
-    this.messageService.sendMessage(form)
+  contactForm(form:NgForm) {
+  console.log("Formulario posteado");
+   console.log(form.value);
+    console.log(form);
+   this.messageService.sendMessage(form)
     .subscribe(() => {
       Swal.fire({
         type: 'success',

@@ -7,21 +7,27 @@
             <img src="./assets/imgs/contactanos/email.png" width="250" class="img-fluid" alt="Responsive image" alt="">
         </div>
         <div class="col-6 col-sm-6  ">
-            <form (ngSubmit)="contactForm(form.value)" #form="ngForm">
+            <form (ngSubmit)="contactForm(form.value)" #form="ngForm" novalidate="">
                 <div class="form-group">
-                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" name="nombre" ngModel>
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" name="nombre" ngModel required minlength="5" #nombre="ngModel" [ngClass]="{'is-invalid': (nombre.errors?.required || nombre.errors?.minlength)&&nombre.touched}">
+                    <div class="invalid-feedback" *ngIf="nombre.errors?.required"> Este campo es requerido</div>
+                    <div class="invalid-feedback" *ngIf="nombre.errors.minlength"> Por lo menos {{ nombre.errors.minlength.requiredLength}} caracteres.</div>
                 </div>
                 <div class="form-group">
-                    <input type="email" class="form-control" id="email" placeholder="E-mail" name="email" ngModel>
+                    <input type="email" class="form-control" id="email" placeholder="E-mail" name="email" ngModel required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" #email="ngModel" [ngClass]="{'is-invalid': (email.errors?.required || email.errors?.pattern)&&email.touched}">
+                    <div class="invalid-feedback" *ngIf="email.errors?.required"> Este campo es requerido</div>
+                    <div class="invalid-feedback" *ngIf="email.errors?.pattern"> No cumple con el formato de un correo electrónico</div>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="empresa" placeholder="Empresa" name="empresa" ngModel>
+                    <input type="text" class="form-control" id="empresa" placeholder="Empresa" name="empresa" ngModel required #empresa="ngModel" [ngClass]="{'is-invalid': empresa.errors?.required&&empresa.touched}">
+                    <div class="invalid-feedback" *ngIf="empresa.errors?.required"> Este campo es requerido</div>
                 </div>
 
                 <div class="form-group">
-                    <textarea class="form-control" id="mensaje" rows="7" placeholder="Mensaje" name="mensaje" ngModel></textarea>
+                    <textarea class="form-control" id="mensaje" rows="7" placeholder="Mensaje" name="mensaje" ngModel required #mensaje="ngModel" [ngClass]="{'is-invalid': mensaje.errors?.required &&mensaje.touched}"></textarea>
+                    <div class="invalid-feedback" *ngIf="mensaje.errors?.required"> Este campo es requerido</div>
                 </div>
-                <button type="submit" class="btn btn-primary mb-2">Solicitar Información</button>
+                <button [disabled]="!form.valid" type="submit" class="btn btn-primary mb-2">Solicitar Información</button>
             </form>
         </div>
 
