@@ -20,10 +20,10 @@ export class ContactanosComponent implements OnInit {
   ngOnInit() {
   }
 
-  contactForm(form:NgForm) {
-  console.log("Formulario posteado");
-   console.log(form.value);
-    console.log(form);
+  contactForm(form: NgForm) {
+  // console.log("Formulario posteado");
+  //  console.log(form.value);
+  //   console.log(form);
    this.messageService.sendMessage(form.value)
     .subscribe(() => {
       Swal.fire({
@@ -31,6 +31,14 @@ export class ContactanosComponent implements OnInit {
         title: 'El mensaje ha sido enviado con éxito',
         showConfirmButton: true,
       });
+      form.controls.nombre.reset();
+      form.controls.email.reset();
+      form.controls.empresa.reset();
+      form.controls.mensaje.reset();
+
     });
   }
+
+
+
 }
