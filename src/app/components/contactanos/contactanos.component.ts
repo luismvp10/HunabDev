@@ -24,7 +24,7 @@ export class ContactanosComponent implements OnInit {
   console.log("Formulario posteado");
    console.log(form.value);
     console.log(form);
-   this.messageService.sendMessage(form)
+   this.messageService.sendMessage(form.value)
     .subscribe(() => {
       Swal.fire({
         type: 'success',
