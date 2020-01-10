@@ -10,6 +10,6 @@ export class MessageService {
 
 
   sendMessage(body) {
-    return this.http.post('https://us-central1-hunab-8fe9e.cloudfunctions.net/app/email', body);
+    return this.http.post('https://us-central1-hunab-36a6f.cloudfunctions.net/app/email', body);
   }
 }
